@@ -1,12 +1,65 @@
-body ul li {
-    color: darkseagreen
+ p {
+     font-family: sans-serif
+ }
+
+ h2 {
+     font-family: monospace;
+     color: #7488A0;
+     font-size: 25px
+ }
+
+ h1 {
+     font-family: sans-serif;
+     color: #EF423E;
+     border: 3px solid #7488A0;
+     padding: 10px 10px 10px 10px;
+     margin-left: auto;
+     margin-right: auto;
+     width: 80%;
+     text-align: center;
+     font-size: 50px
+ }
+
+ #content {
+     color: #EF423E;
+
+
+ }
+
+
+ footer {
+     font-family: monospace;
+     color: #7488A0
+ }
+
+ a {
+     font-family: monospace;
+     color: #7488A0
+ }
+
+ ul {
+     font-family: sans-serif;
+     color: #EF423E
+ }
+
+ body {
+     background-color: #E9DEEE
+ }
+
+ header {
+     display: flex;
+     align-items: center;
+     background-color: #EF423E;
+ }
+
+header nav   {
+    flex: 1
 }
 
-h1 {
-    color: darkgreen;
-    font-family: monospace
-}
+@media screen and (max-width: 40rem) {
 
-h2 {
-    color: darkgreen;
-}
+    header
+        {
+        flex-direction: column;
+        }
+    }
