@@ -1,65 +1,97 @@
- p {
-     font-family: sans-serif
- }
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 
- h2 {
-     font-family: monospace;
-     color: #7488A0;
-     font-size: 25px
- }
+html {
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+}
 
- h1 {
-     font-family: sans-serif;
-     color: #EF423E;
-     border: 3px solid #7488A0;
-     padding: 10px 10px 10px 10px;
-     margin-left: auto;
-     margin-right: auto;
-     width: 80%;
-     text-align: center;
-     font-size: 50px
- }
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+    background-size: cover;
+    background-position: center;
+    min-height: 100;
+    display: flex;
+    flex-direction: column;
+    background-color: #E9DEEE;
+}
 
- #content {
-     color: #EF423E;
+.main-text {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+
+.andy-quote {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+}
 
 
- }
+p {
+    font-family: sans-serif
+}
+
+h2 {
+    font-family: monospace;
+    color: #7488A0;
+    font-size: 25px
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #EF423E;
+    border: 3px solid #7488A0;
+    padding: 10px 10px 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+    font-size: 50px
+}
+
+#content {
+    color: #EF423E;
 
 
- footer {
-     font-family: monospace;
-     color: #7488A0
- }
+}
 
- a {
-     font-family: monospace;
-     color: #7488A0
- }
 
- ul {
-     font-family: sans-serif;
-     color: #EF423E
- }
+footer {
+    font-family: monospace;
+    color: #7488A0
+}
 
- body {
-     background-color: #E9DEEE
- }
+a {
+    font-family: monospace;
+    color: #7488A0
+}
 
- header {
-     display: flex;
-     align-items: center;
-     background-color: #EF423E;
- }
+ul {
+    font-family: sans-serif;
+    color: #EF423E
+}
 
-header nav   {
+header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+header nav {
     flex: 1
 }
 
-@media screen and (max-width: 40rem) {
-
-    header
-        {
+@media screen and (max-width: 30rem) {
+    header,
+    main,
+    footer {
         flex-direction: column;
-        }
     }
+}
